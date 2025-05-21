@@ -2,19 +2,37 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+### 1. Install Dependencies
 
+#### Frontend (Next.js)
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Backend (Python/Streamlit)
+It is recommended to use a Python virtual environment:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+python3 -m pip install -r requirements.txt
+```
+
+### 2. Run the Development Servers
+
+#### Frontend (Next.js)
+```bash
+npm run dev
+```
+- Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+#### Backend (Streamlit Chatbot)
+```bash
+source venv/bin/activate
+streamlit run app.py
+```
+- Open the local URL shown in your terminal (typically [http://localhost:8501](http://localhost:8501)).
+
+---
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
